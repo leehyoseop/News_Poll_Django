@@ -1,0 +1,12 @@
+#headline {
+    background-color: azure;
+    background-size: 30px;
+    font-size: xxx-large;
+}
+#content {
+    color: black;
+    font-size: xx-large;
+}
+.content{
+    background-color: white;
+}
