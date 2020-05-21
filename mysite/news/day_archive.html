@@ -1,0 +1,15 @@
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+    <p>Article Archives for {{ day|date:'N d'}}</p>
+
+    <div>
+        <ul>
+            {% for article in object_list %}
+            <li>{{ article.pub_date|date:"Y/m/d" }}&nbsp;&nbsp;&nbsp;
+            <a href="{{ article.get_absolute_url }}">{{ article.headline }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</body>

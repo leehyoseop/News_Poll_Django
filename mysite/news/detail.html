@@ -1,0 +1,18 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/style.css' %}">
+
+<head>
+    <meta charset="utf-8">
+    <img src="{% static 'news/images/sitelogo.png' %}">
+</head>
+<body>
+    <p id="headline">{{ object.headline }}</p>
+    <div class="content">
+        <p id="content">{{ object.content }}</p>
+    </div>
+    <br>
+    <div>
+    <p> {{ object.pub_date}} </p>
+    <p> reporter:&nbsp;{{ object.reporter }} </p>
+    </div>
+</body>

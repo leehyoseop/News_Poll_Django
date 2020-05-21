@@ -19,6 +19,7 @@ class YearArchive(YearArchiveView):
     date_field = "pub_date"
     make_object_list=True
     template_name = 'news/year_archive.html'
+    #month_format = '%m'
     '''
     def year_archive(request, year):
         a_list = Article.objects.filter(pub_date__year=year)
